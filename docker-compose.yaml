@@ -10,11 +10,12 @@ services:
       - "80:80"
     depends_on:
       - mariadb
+
   mariadb:
     image: mariadb:10.4
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_DATABASE: blok3_fitness  # Directly set the database name
       MYSQL_USER: user
       MYSQL_PASSWORD: password
       MYSQL_ROOT_HOST: "%"
@@ -22,12 +23,14 @@ services:
       - "3307:3306"
     volumes:
       - dbdata:/var/lib/mysql
+
   mailhog:
     image: mailhog/mailhog
     ports:
       - "1025:1025" # SMTP
       - "8025:8025" # Web UI
-  phpmyadmin:
+
+    phpmyadmin:
     image: phpmyadmin
     ports:
       - 8000:80
@@ -36,7 +39,9 @@ services:
       - PMA_HOST=mariadb
     depends_on:
       - mariadb
+
     volumes:
       - ./.docker/phpmyadmin/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php
+
 volumes:
   dbdata:
