@@ -33,8 +33,6 @@ while ($row = $result->fetch_assoc()) {
         "Thumbnail URL: " . $row['thumbnail_url']
     ];
 }
-
-//  <img class=thumbnail src=<?php $lessen[][12]> alt="<?php $lessen[0][12]>"> ????????? 
 ?>
 
 
@@ -60,7 +58,7 @@ while ($row = $result->fetch_assoc()) {
         <ul class="nav-links">
         <li class="link"><a href="/index.php">HOME</a></li>
             <li class="link"><a href="../lessen.php">LESSEN</a></li>
-            
+           
             <li class="link"><a href="../over_ons.php">OVER ONS</a></li>
         </ul>
         <button class="btn">Contact Opnemen</button>
@@ -70,24 +68,22 @@ while ($row = $result->fetch_assoc()) {
         <h2 class="header">ONZE LESSEN</h2>
         <div class="features">
             <div class="card">
-                <span><?php echo $lessen[0][1] ?> <br></span>
-                <h4><?php echo $lessen[0][11] ?></h4>
+                <span><?php echo $lessen[8][1] ?> <br></span>
+                <h4><?php echo $lessen[8][11] ?></h4>
                 <p>
                 
                     
-                    <?php echo $lessen[0][2] ?> <br>
-                    <?php echo $lessen[0][3] ?> <br>
-                    <?php echo $lessen[0][4] ?> <br>
-                    <?php echo $lessen[0][5] ?> <br>
-                    <?php echo $lessen[0][6] ?> <br>
-                    <?php echo $lessen[0][7] ?> <br>
-                    <?php echo $lessen[0][8] ?> <br>
-                    <?php echo $lessen[0][9] ?> <br>
-                    <?php echo $lessen[0][10] ?> <br>
+                    <?php echo $lessen[8][2] ?> <br>
+                    <?php echo $lessen[8][3] ?> <br>
+                    <?php echo $lessen[8][4] ?> <br>
+                    <?php echo $lessen[8][5] ?> <br>
+                    <?php echo $lessen[8][6] ?> <br>
+                    <?php echo $lessen[8][7] ?> <br>
+                    <?php echo $lessen[8][8] ?> <br>
+                    <?php echo $lessen[8][9] ?> <br>
+                    <?php echo $lessen[8][10] ?> <br>
                     
 
-                    
-                    
                     
 
                     

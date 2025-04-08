@@ -33,8 +33,6 @@ while ($row = $result->fetch_assoc()) {
         "Thumbnail URL: " . $row['thumbnail_url']
     ];
 }
-
-//  <img class=thumbnail src=<?php $lessen[][12]> alt="<?php $lessen[0][12]>"> ????????? 
 ?>
 
 
@@ -70,24 +68,22 @@ while ($row = $result->fetch_assoc()) {
         <h2 class="header">ONZE LESSEN</h2>
         <div class="features">
             <div class="card">
-                <span><?php echo $lessen[0][1] ?> <br></span>
-                <h4><?php echo $lessen[0][11] ?></h4>
+                <span><?php echo $lessen[3][1] ?> <br></span>
+                <h4><?php echo $lessen[3][11] ?></h4>
                 <p>
                 
                     
-                    <?php echo $lessen[0][2] ?> <br>
-                    <?php echo $lessen[0][3] ?> <br>
-                    <?php echo $lessen[0][4] ?> <br>
-                    <?php echo $lessen[0][5] ?> <br>
-                    <?php echo $lessen[0][6] ?> <br>
-                    <?php echo $lessen[0][7] ?> <br>
-                    <?php echo $lessen[0][8] ?> <br>
-                    <?php echo $lessen[0][9] ?> <br>
-                    <?php echo $lessen[0][10] ?> <br>
+                    <?php echo $lessen[3][2] ?> <br>
+                    <?php echo $lessen[3][3] ?> <br>
+                    <?php echo $lessen[3][4] ?> <br>
+                    <?php echo $lessen[3][5] ?> <br>
+                    <?php echo $lessen[3][6] ?> <br>
+                    <?php echo $lessen[3][7] ?> <br>
+                    <?php echo $lessen[3][8] ?> <br>
+                    <?php echo $lessen[3][9] ?> <br>
+                    <?php echo $lessen[3][10] ?> <br>
                     
 
-                    
-                    
                     
 
                     

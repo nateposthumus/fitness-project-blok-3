@@ -29,7 +29,7 @@ $recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
     <nav>
         <div class="nav-logo">
-            <a href="#">
+            <a href="index.php">
                 <img src="images/logo.png">
             </a>
         </div>
@@ -37,10 +37,10 @@ $recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
         <ul class="nav-links">
         <li class="link"><a href="index.php">HOME</a></li>
             <li id="link1" class="link"><a href="lessen.php">LESSEN</a></li>
-            <li id="link2" class="link"><a href="prijzen.php">PRIJZEN</a></li>
+            
             <li id="link3" class="link"><a href="over_ons.php">OVER ONS</a></li>
         </ul>
-        <button class="btn">Contact Opnemen</button>
+        <a href="over_ons.php"><button class="btn">Contact Opnemen</button></a>
     </nav>
 
     <header class="container">
@@ -52,7 +52,7 @@ $recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
                 temporibus ipsum distinctio numquam ut omnis placeat, nam sint atque quos dolorem laborum? Rerum, esse
                 dolorem.
             </p>
-            <button class="btn" id="link1">Aan De Slag!</button>
+            <a href="lessen.php"><button class="btn" >Aan De Slag!</button></a>
         </div>
         <div class="image">
             <img src="images/header.png">
@@ -80,28 +80,29 @@ $recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
             </div>
         </div>
         <div class="column">
-            <h4>Company</h4>
-            <a href="#">Business</a>
-            <a href="#">Partnership</a>
-            <a href="#">Network</a>
-        </div>
-        <div class="column">
-            <h4>About Us</h4>
-            <a href="#">Blogs</a>
-            <a href="#">Channels</a>
-            <a href="#">Sponsors</a>
-        </div>
-        <div class="column">
-            <h4>Contact</h4>
-            <a href="#">Contact Us</a>
-            <a href="#">Privicy Policy</a>
-            <a href="#">Terms & Conditions</a>
-        </div>
-    </footer>
+    <h4>Bedrijf</h4>
+    <a href="#">Zakelijk</a>
+    <a href="#">Partnerschap</a>
+    <a href="#">Netwerk</a>
+</div>
+<div class="column">
+    <h4>Over Ons</h4>
+    <a href="#">Blogs</a>
+    <a href="#">Kanalen</a>
+    <a href="#">Sponsoren</a>
+</div>
+<div class="column">
+    <h4>Contact</h4>
+    <a href="#">Neem Contact Op</a>
+    <a href="#">Privacybeleid</a>
+    <a href="#">Algemene Voorwaarden</a>
+</div>
+</footer>
 
-    <div class="copyright">
-        Copyright © 2025 Train Hard | Fitness Blok3. All Rights Reserved.
-    </div>
+<div class="copyright">
+    Copyright © 2025 Train Hard | Fitness Blok3. Alle Rechten Voorbehouden.
+</div>
+
 
 
     <script src="script.js"></script>
